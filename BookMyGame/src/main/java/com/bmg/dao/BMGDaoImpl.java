@@ -138,6 +138,7 @@ public class BMGDaoImpl implements IBMGDao {
 		PreparedStatement ptsmt = null;
 		ResultSet rs = null;
 		try {
+		  con = JDBCUtil.getConnection();
 			if (con != null) {
 				con = JDBCUtil.getConnection();
 				if (userType.equalsIgnoreCase("player")) {
