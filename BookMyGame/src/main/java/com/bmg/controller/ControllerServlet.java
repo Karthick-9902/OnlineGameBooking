@@ -239,7 +239,6 @@ public class ControllerServlet extends HttpServlet {
 			facility.setFomail((String) session.getAttribute("mail"));
 			status = service.updateFaciltiy(facility, name);
 			if (status.equalsIgnoreCase("success")) {
-				System.out.println(request.getRequestURI());
 				rq = request.getRequestDispatcher("../result.jsp");
 				context = getServletContext();
 				context.setAttribute("result", "usuccess");
@@ -265,7 +264,7 @@ public class ControllerServlet extends HttpServlet {
 			booking.setBookType(request.getParameter("btype"));
 			status = service.bookFacility(booking);
 			if (status.equalsIgnoreCase("success")) {
-				System.out.println(request.getRequestURI());
+
 				rq = request.getRequestDispatcher("../result.jsp");
 				context = getServletContext();
 				context.setAttribute("result", "bsuccess");
@@ -473,7 +472,6 @@ public class ControllerServlet extends HttpServlet {
 				String message = "Your Request for joining tournament at " + facilityName + "on " + date + "is Declined";
 				inbox.setUserMail(userMail);
 				inbox.setMessage(message);
-				System.out.print(inbox.getMessage());
 				status = service.updateInbox(userMail, message);
 				if (status.equalsIgnoreCase("success")) {
 					rq = request.getRequestDispatcher("../result.jsp");
