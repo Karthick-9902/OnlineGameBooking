@@ -9,4 +9,4 @@ A back-end  focused J2EE(Servlet and JSP) application with basic front-end and w
 - Facility owners can cancel the booking of a facility by providing the reason and the reason for cancellation can be view by the user in their inbox
 - Players can book a facility for hosting a tournament and other players can request to join and the host can accept or cancel the record 
 # Demo Video:
-- https://drive.google.com/file/d/1Cfa-N7yOzRcJC1Rxa7e-lHvhusrTxrId/view?usp=share_link
+- https://drive.google.com/file/d/1yICdFLii7zsetRBJfTiUh-j9IP1cnk5R/view?usp=share_link
